@@ -145,7 +145,7 @@ async function run() {
     const model = getModel();
     tfvis.show.modelSummary({name: 'Model Architecture'}, model);
     await train(model, data);
-    await model.save('downloads://my_model');
+    // await model.save('downloads://my_model');
     init();
     alert("Training is done, try classifying your drawings!");
 }
